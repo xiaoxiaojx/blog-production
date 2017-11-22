@@ -3,9 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "tsc ./src/app.ts --outDir ./bin && node ./bin/www",
-    "build": "tsc ./src/app.ts --outDir ./bin ",
-    "release": "sh ./bin/release.sh"
+    "start": "node www"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
