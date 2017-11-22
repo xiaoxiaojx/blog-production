@@ -13,7 +13,7 @@ var Services = require("./controllers");
 var app = express();
 mongoose.connect("mongodb://localhost:27017");
 mongoose.connection.on("error", function () {
-    console.log("MongoDB connection error. Please make sure MongoDB is running.");
+    console.log("MongoDB connection error. Please make sure MongoDB is running...");
     process.exit();
 });
 app.use(cors());
