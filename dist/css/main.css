@@ -88,6 +88,18 @@
   width: 1000px;
   margin: auto;
   box-sizing: border-box; }
+.ArticlesWrap {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+.IndexWrap {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
 body {
   margin: 0;
   padding: 0;
