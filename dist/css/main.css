@@ -1,17 +1,3 @@
-.LoginWrap {
-  width: 360px;
-  margin: 30px auto; }
-  .LoginWrap > div {
-    display: block !important; }
-  .LoginWrap .btnWrap {
-    margin-top: 30px; }
-.RegisterWrap {
-  width: 360px;
-  margin: 30px auto; }
-  .RegisterWrap > div {
-    display: block !important; }
-  .RegisterWrap .btnWrap {
-    margin-top: 30px; }
 .container {
   position: relative;
   top: 70px;
@@ -81,6 +67,20 @@
   width: 1000px;
   margin: auto;
   box-sizing: border-box; }
+.LoginWrap {
+  width: 360px;
+  margin: 30px auto; }
+  .LoginWrap > div {
+    display: block !important; }
+  .LoginWrap .btnWrap {
+    margin-top: 30px; }
+.RegisterWrap {
+  width: 360px;
+  margin: 30px auto; }
+  .RegisterWrap > div {
+    display: block !important; }
+  .RegisterWrap .btnWrap {
+    margin-top: 30px; }
 .container {
   position: relative;
   top: 70px;
@@ -98,19 +98,47 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter, .SettingsWrap .avatarWrap {
+.flexAlignCenter {
+  display: flex;
+  align-items: center; }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+
+.flexAlignCenter, .SettingsWrap .avatarWrap, .SettingsWrap .sexWrap, .SettingsWrap .sexWrap > :nth-child(2) {
   display: flex;
   align-items: center; }
 
-.SettingsWrap .avatarWrap img {
-  border-radius: 50px;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  margin-right: 20px; }
-
-.SettingsWrap .avatarWrap input {
-  display: none; }
+.SettingsWrap {
+  padding: 50px 45px; }
+  .SettingsWrap .nicknameWrap {
+    margin: 15px 0; }
+  .SettingsWrap .avatarWrap {
+    margin: 15px 0; }
+    .SettingsWrap .avatarWrap img {
+      border-radius: 50px;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      margin-right: 20px; }
+    .SettingsWrap .avatarWrap input {
+      display: none; }
+  .SettingsWrap hr {
+    opacity: 0.3;
+    border-top: 1px solid #ebebeb; }
+  .SettingsWrap label {
+    margin-right: 30px;
+    width: 80px; }
+  .SettingsWrap .sexWrap {
+    margin: 15px 0; }
+    .SettingsWrap .sexWrap > :nth-child(2) {
+      width: 100%;
+      justify-content: flex-start; }
+      .SettingsWrap .sexWrap > :nth-child(2) > div {
+        width: 70px !important; }
 .container {
   position: relative;
   top: 70px;
