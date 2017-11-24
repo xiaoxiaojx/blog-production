@@ -98,37 +98,19 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter, .SettingsWrap .avatarWrap, .SettingsWrap .sexWrap, .SettingsWrap .sexWrap > :nth-child(2) {
+.flexAlignCenter, .SettingsWrap .avatarWrap {
   display: flex;
   align-items: center; }
 
-.SettingsWrap {
-  padding: 50px 45px; }
-  .SettingsWrap .nicknameWrap {
-    margin: 15px 0; }
-  .SettingsWrap .avatarWrap {
-    margin: 15px 0; }
-    .SettingsWrap .avatarWrap img {
-      border-radius: 50px;
-      display: inline-block;
-      width: 100px;
-      height: 100px;
-      margin-right: 20px; }
-    .SettingsWrap .avatarWrap input {
-      display: none; }
-  .SettingsWrap hr {
-    opacity: 0.3;
-    border-top: 1px solid #ebebeb; }
-  .SettingsWrap label {
-    margin-right: 30px;
-    width: 80px; }
-  .SettingsWrap .sexWrap {
-    margin: 15px 0; }
-    .SettingsWrap .sexWrap > :nth-child(2) {
-      width: 100%;
-      justify-content: flex-start; }
-      .SettingsWrap .sexWrap > :nth-child(2) > div {
-        width: 70px !important; }
+.SettingsWrap .avatarWrap img {
+  border-radius: 50px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px; }
+
+.SettingsWrap .avatarWrap input {
+  display: none; }
 .container {
   position: relative;
   top: 70px;
