@@ -10,6 +10,7 @@ var cors = require("cors");
 var homeController = require("./controllers/home");
 var test = require("./controllers/test");
 var Services = require("./controllers");
+var Articles = require("./controllers/article");
 var app = express();
 mongoose.connect("mongodb://localhost:27017");
 mongoose.connection.on("error", function () {
@@ -28,4 +29,6 @@ app.post("/api/register", Services.register);
 app.post("/api/login", Services.login);
 app.post("/api/getUserInfo", Services.getUserInfo);
 app.post("/api/setUserInfo", Services.setUserInfo);
+app.post("/api/publishArticle", Articles.publishArticle);
+app.post("/api/getArticles", Articles.getArticles);
 module.exports = app;
