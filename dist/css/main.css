@@ -98,9 +98,90 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter {
+.flexAlignCenter, .HomeWrap main .articles .avatar {
   display: flex;
   align-items: center; }
+
+.HomeWrap {
+  padding-bottom: 30px; }
+  .HomeWrap header {
+    padding-top: 85px;
+    text-align: center; }
+    .HomeWrap header img {
+      width: 85px;
+      height: 85px;
+      border-radius: 85px; }
+    .HomeWrap header .setting {
+      margin-top: 1.1rem;
+      padding: 8px 35px;
+      opacity: 0.8;
+      color: #000;
+      border: 1px solid #000;
+      background-color: #fff;
+      font-size: 12px;
+      outline: none;
+      cursor: pointer; }
+    .HomeWrap header .setting:hover {
+      opacity: 1; }
+    .HomeWrap header .nickname {
+      margin-top: 25px;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #333; }
+    .HomeWrap header .selfIntroduction {
+      margin: 5px 0;
+      font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
+      color: #8b8b8b;
+      font-size: 16px; }
+    .HomeWrap header .email {
+      margin: 5px 0;
+      font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
+      color: #8b8b8b;
+      font-size: 16px; }
+      .HomeWrap header .email a {
+        color: #8b8b8b !important; }
+  .HomeWrap main {
+    border-radius: 2px;
+    width: 600px;
+    margin: 25px auto;
+    padding: 0 25px;
+    background-color: rgba(244, 245, 245, 0.2); }
+    .HomeWrap main .header {
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      border-bottom: 1px solid #ebebeb;
+      font-weight: 600;
+      color: #2b445d; }
+    .HomeWrap main .articles {
+      padding: 30px 0; }
+      .HomeWrap main .articles > div {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ebebeb; }
+      .HomeWrap main .articles .avatar {
+        font-size: 14px;
+        color: #8b8b8b;
+        width: 100%; }
+        .HomeWrap main .articles .avatar img {
+          margin-right: 6px;
+          width: 30px;
+          height: 30px;
+          border-radius: 30px; }
+        .HomeWrap main .articles .avatar span {
+          margin: 0px 6px; }
+      .HomeWrap main .articles .title {
+        display: block;
+        color: #909090;
+        margin: 20px 0 10px;
+        font-size: 24px;
+        font-weight: 600; }
+      .HomeWrap main .articles .content {
+        display: block;
+        height: 45px;
+        overflow: hidden;
+        word-break: break-all;
+        color: #8b8b8b;
+        font-size: 16px; }
 .container {
   position: relative;
   top: 70px;
@@ -156,9 +237,42 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter {
+.flexAlignCenter, .ArticlesWrap .editorWrap {
   display: flex;
   align-items: center; }
+
+.ArticlesWrap {
+  padding: 10px 0px; }
+  .ArticlesWrap .editorWrap {
+    justify-content: flex-end;
+    padding: 10px 0px; }
+    .ArticlesWrap .editorWrap > div {
+      width: 100px !important;
+      font-size: 12px; }
+  .ArticlesWrap h1 {
+    margin: -10px 0 30px;
+    font-weight: 400; }
+    .ArticlesWrap h1 > div {
+      font-size: 28px !important;
+      width: 800px !important; }
+  .ArticlesWrap .ql-editor {
+    min-height: 600px; }
+  .ArticlesWrap footer {
+    display: flex;
+    margin-top: 4px;
+    padding-right: 20px;
+    justify-content: flex-end; }
+  .ArticlesWrap .markDownWrap {
+    display: flex;
+    justify-content: flex-start; }
+    .ArticlesWrap .markDownWrap > :nth-child(1) {
+      border: 1px solid #ebebeb;
+      outline: none;
+      min-height: 600px;
+      max-width: 500px;
+      min-width: 500px; }
+    .ArticlesWrap .markDownWrap > :nth-child(2) {
+      word-break: break-all; }
 .container {
   position: relative;
   top: 70px;
