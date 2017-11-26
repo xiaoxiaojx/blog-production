@@ -3,8 +3,8 @@ exports.__esModule = true;
 var Article_1 = require("../models/Article");
 var $findNot = { "__v": 0 };
 exports.publishArticle = function (req, res) {
-    var _a = req.body, userName = _a.userName, nickname = _a.nickname, avatar = _a.avatar, title = _a.title, content = _a.content, date = _a.date;
-    Article_1["default"].insertMany({ userName: userName, nickname: nickname, avatar: avatar, title: title, content: content, date: date }, function (err, doc) {
+    var _a = req.body, userName = _a.userName, nickname = _a.nickname, avatar = _a.avatar, title = _a.title, content = _a.content, date = _a.date, editor = _a.editor;
+    Article_1["default"].insertMany({ userName: userName, nickname: nickname, avatar: avatar, title: title, content: content, date: date, editor: editor }, function (err, doc) {
         if (err)
             throw err;
         if (doc) {

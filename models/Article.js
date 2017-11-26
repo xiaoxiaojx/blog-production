@@ -7,7 +7,8 @@ var articleSchema = new mongoose.Schema({
     avatar: String,
     title: String,
     content: String,
-    date: String
+    date: String,
+    editor: String
 });
 var Article = mongoose.model("Article", articleSchema);
 exports["default"] = Article;
