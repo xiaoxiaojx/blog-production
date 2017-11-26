@@ -296,7 +296,13 @@
   align-items: center; }
 
 .IndexWrap section {
-  padding: 30px 50px; }
+  padding: 30px 50px;
+  min-height: 700px;
+  transition: all 1s ease-in-out; }
+
+.IndexWrap .progress {
+  margin: 200px 430px;
+  width: 200px !important; }
 .container {
   position: relative;
   top: 70px;
