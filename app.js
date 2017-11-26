@@ -31,4 +31,5 @@ app.post("/api/getUserInfo", Services.getUserInfo);
 app.post("/api/setUserInfo", Services.setUserInfo);
 app.post("/api/publishArticle", Articles.publishArticle);
 app.post("/api/getArticles", Articles.getArticles);
+app.post("/api/getArticle", Articles.getArticle);
 module.exports = app;
