@@ -98,7 +98,47 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter, .HomeWrap main .articles .avatar {
+.flexAlignCenter, .ArticleTmpWrap .avatar {
+  display: flex;
+  align-items: center; }
+
+.ArticleTmpWrap {
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #ebebeb; }
+  .ArticleTmpWrap .avatar {
+    font-size: 14px;
+    color: #8b8b8b;
+    width: 100%; }
+    .ArticleTmpWrap .avatar img {
+      margin-right: 6px;
+      width: 30px;
+      height: 30px;
+      border-radius: 30px; }
+    .ArticleTmpWrap .avatar span {
+      margin: 0px 6px; }
+  .ArticleTmpWrap a {
+    cursor: pointer !important; }
+  .ArticleTmpWrap .title {
+    display: block;
+    color: #909090;
+    margin: 20px 0 10px;
+    font-size: 24px;
+    font-weight: 600; }
+  .ArticleTmpWrap .content {
+    display: block;
+    height: 45px;
+    overflow: hidden;
+    word-break: break-all;
+    color: #8b8b8b;
+    font-size: 16px; }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+
+.flexAlignCenter {
   display: flex;
   align-items: center; }
 
@@ -145,7 +185,7 @@
     width: 600px;
     margin: 25px auto;
     padding: 0 25px;
-    background-color: rgba(244, 245, 245, 0.2); }
+    background-color: rgba(244, 245, 245, 0.1); }
     .HomeWrap main .header {
       width: 100%;
       height: 60px;
@@ -153,35 +193,6 @@
       border-bottom: 1px solid #ebebeb;
       font-weight: 600;
       color: #2b445d; }
-    .HomeWrap main .articles {
-      padding: 30px 0; }
-      .HomeWrap main .articles > div {
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ebebeb; }
-      .HomeWrap main .articles .avatar {
-        font-size: 14px;
-        color: #8b8b8b;
-        width: 100%; }
-        .HomeWrap main .articles .avatar img {
-          margin-right: 6px;
-          width: 30px;
-          height: 30px;
-          border-radius: 30px; }
-        .HomeWrap main .articles .avatar span {
-          margin: 0px 6px; }
-      .HomeWrap main .articles .title {
-        display: block;
-        color: #909090;
-        margin: 20px 0 10px;
-        font-size: 24px;
-        font-weight: 600; }
-      .HomeWrap main .articles .content {
-        display: block;
-        height: 45px;
-        overflow: hidden;
-        word-break: break-all;
-        color: #8b8b8b;
-        font-size: 16px; }
 .container {
   position: relative;
   top: 70px;
@@ -283,6 +294,64 @@
 .flexAlignCenter {
   display: flex;
   align-items: center; }
+
+.IndexWrap section {
+  padding: 30px 50px; }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+
+.flexAlignCenter {
+  display: flex;
+  align-items: center; }
+
+.ViewArticleWrap {
+  display: flex;
+  min-height: 700px; }
+  .ViewArticleWrap main {
+    background-color: rgba(244, 245, 245, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+    width: 700px; }
+  .ViewArticleWrap nav {
+    width: 280px; }
+  .ViewArticleWrap .avatar {
+    display: flex; }
+    .ViewArticleWrap .avatar img {
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      margin-right: 15px; }
+  .ViewArticleWrap .nickname {
+    font-size: 16px;
+    font-weight: 700;
+    color: #909090; }
+  .ViewArticleWrap .date {
+    font-size: 12px;
+    color: #909090; }
+  .ViewArticleWrap .title {
+    text-align: center;
+    margin: 30px 0;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif; }
+  .ViewArticleWrap .allArticles {
+    background-color: rgba(244, 245, 245, 0.1); }
+    .ViewArticleWrap .allArticles > :nth-child(1) {
+      padding: 10px;
+      border-bottom: 1px solid #ebebeb; }
+  .ViewArticleWrap .articlesList {
+    padding: 5px 10px;
+    border-bottom: 1px dashed #ebebeb; }
+    .ViewArticleWrap .articlesList a {
+      display: block;
+      cursor: pointer;
+      height: 18px;
+      font-size: 16px !important;
+      overflow: hidden;
+      word-break: break-all;
+      color: #909090; }
 .container {
   position: relative;
   top: 70px;
