@@ -322,6 +322,8 @@
     padding: 20px;
     margin-right: 20px;
     width: 700px; }
+  .ViewArticleWrap img {
+    max-width: 500px !important; }
   .ViewArticleWrap nav {
     width: 280px; }
   .ViewArticleWrap .avatar {
