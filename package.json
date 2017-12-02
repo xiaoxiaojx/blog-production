@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "tsc ./src/app.ts --outDir ./bin && node ./bin/www",
+    "start": "tsc ./src/app.ts --outDir ./bin --lib ES2015 && node ./bin/www",
     "build": "tsc ./src/app.ts --outDir ./bin ",
     "release": "sh ./tool/release.sh"
   },
