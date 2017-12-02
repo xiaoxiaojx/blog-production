@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "tsc ./src/app.ts --outDir ./bin --lib ES2015 && node ./bin/www",
-    "build": "tsc ./src/app.ts --outDir ./bin ",
+    "build": "tsc ./src/app.ts --outDir ./bin --lib ES2015 ",
     "release": "sh ./tool/release.sh"
   },
   "dependencies": {
