@@ -106,6 +106,7 @@
   padding: 20px 0 10px;
   border-bottom: 1px solid #ebebeb; }
   .ArticleTmpWrap .avatar {
+    align-items: center;
     font-size: 14px;
     color: #8b8b8b;
     width: 100%; }
@@ -131,6 +132,15 @@
     word-break: break-all;
     color: #8b8b8b;
     font-size: 16px; }
+  .ArticleTmpWrap .comment {
+    display: flex;
+    align-content: flex-start;
+    font-size: 12px;
+    color: #b4b4b4; }
+    .ArticleTmpWrap .comment svg {
+      color: #b4b4b4 !important;
+      width: 14px !important;
+      height: 14px !important; }
 .container {
   position: relative;
   top: 70px;
@@ -314,6 +324,40 @@
   display: flex;
   align-items: center; }
 
+.CommentTmpWrap {
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #ebebeb; }
+  .CommentTmpWrap .avatar {
+    display: flex;
+    font-size: 14px;
+    color: #8b8b8b;
+    width: 100%; }
+    .CommentTmpWrap .avatar > :nth-child(2) {
+      margin-left: 8px; }
+    .CommentTmpWrap .avatar .detail > :nth-child(1) {
+      font-size: 14px;
+      color: #222; }
+    .CommentTmpWrap .avatar .detail > :nth-child(2) {
+      font-size: 12px; }
+    .CommentTmpWrap .avatar span {
+      margin: 0px 6px; }
+  .CommentTmpWrap .commentContent {
+    margin-top: 15px;
+    overflow: hidden;
+    word-break: break-all;
+    color: #222;
+    font-size: 16px; }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+
+.flexAlignCenter {
+  display: flex;
+  align-items: center; }
+
 .ViewArticleWrap {
   display: flex;
   min-height: 700px; }
@@ -323,6 +367,7 @@
     margin-right: 20px;
     width: 700px; }
   .ViewArticleWrap img {
+    cursor: pointer;
     max-width: 500px !important; }
   .ViewArticleWrap nav {
     width: 280px; }
@@ -360,6 +405,32 @@
       overflow: hidden;
       word-break: break-all;
       color: #909090; }
+  .ViewArticleWrap .content {
+    min-height: 400px; }
+  .ViewArticleWrap .likeWrap {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #ebebeb;
+    color: #6fbed5;
+    font-size: 16px; }
+    .ViewArticleWrap .likeWrap > :nth-child(1) {
+      display: flex;
+      align-items: center; }
+      .ViewArticleWrap .likeWrap > :nth-child(1) span {
+        margin-left: 8px; }
+    .ViewArticleWrap .likeWrap > :nth-child(2) {
+      margin-top: 15px; }
+      .ViewArticleWrap .likeWrap > :nth-child(2) img {
+        margin-right: 10px; }
+    .ViewArticleWrap .likeWrap svg {
+      width: 30px !important;
+      height: 30px !important; }
+    .ViewArticleWrap .likeWrap .like {
+      color: #6fbed5 !important; }
+    .ViewArticleWrap .likeWrap .normal {
+      color: #ccc !important; }
+  .ViewArticleWrap .commentBtnWrap {
+    text-align: right; }
 .container {
   position: relative;
   top: 70px;
@@ -376,3 +447,6 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   color: #6fbed5; }
+
+svg {
+  cursor: pointer; }
