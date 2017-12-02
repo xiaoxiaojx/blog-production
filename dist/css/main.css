@@ -134,9 +134,11 @@
     font-size: 16px; }
   .ArticleTmpWrap .comment {
     display: flex;
-    align-content: flex-start;
+    align-items: center;
     font-size: 12px;
     color: #b4b4b4; }
+    .ArticleTmpWrap .comment span {
+      margin-right: 10px; }
     .ArticleTmpWrap .comment svg {
       color: #b4b4b4 !important;
       width: 14px !important;
