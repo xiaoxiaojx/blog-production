@@ -59,7 +59,7 @@ exports.publishArticle = function (req, res) {
     });
 };
 exports.getArticles = function (req, res) { return __awaiter(_this, void 0, void 0, function () {
-    var userName, filter, articleDocs, userInfos, data;
+    var userName, filter, articleDocs, getLength, userInfos, data;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -74,6 +74,11 @@ exports.getArticles = function (req, res) { return __awaiter(_this, void 0, void
                     })];
             case 1:
                 articleDocs = _a.sent();
+                getLength = function (arr) {
+                    var targetArr = [];
+                    targetArr = arr.map(function (item, index) { return index; });
+                    return targetArr.length;
+                };
                 return [4 /*yield*/, Promise.all(articleDocs.map(function (item) { return quick_1.quickGetUserInfo(item["userName"]); }))];
             case 2:
                 userInfos = _a.sent();
@@ -83,12 +88,8 @@ exports.getArticles = function (req, res) { return __awaiter(_this, void 0, void
                     title: articleDocs[index]["title"],
                     content: articleDocs[index]["content"],
                     date: articleDocs[index]["date"],
-                    like: articleDocs[index]["like"].reduce(function (pVal, cVal) {
-                        return ++pVal;
-                    }, 0),
-                    comment: articleDocs[index]["comment"].reduce(function (pVal, cVal) {
-                        return ++pVal;
-                    }, 0),
+                    like: getLength(articleDocs[index]["like"]),
+                    comment: getLength(articleDocs[index]["comment"]),
                     editor: articleDocs[index]["editor"],
                     nickname: item["nickname"],
                     avatar: item["avatar"]
