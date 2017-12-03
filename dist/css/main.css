@@ -310,18 +310,85 @@
   margin: auto;
   box-sizing: border-box; }
 
+.flexAlignCenter, .LikeListTmpWrap .likeTotal {
+  display: flex;
+  align-items: center; }
+
+.LikeListTmpWrap {
+  display: flex;
+  margin: 15px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #ebebeb; }
+  .LikeListTmpWrap > :nth-child(1) {
+    margin: -6px 4px 0 0 !important;
+    padding: 0px !important; }
+  .LikeListTmpWrap .likeTitle {
+    max-width: 270px;
+    overflow: hidden;
+    word-break: break-all; }
+  .LikeListTmpWrap a {
+    cursor: pointer; }
+  .LikeListTmpWrap .likeTotal > :nth-child(1) {
+    margin-right: 10px; }
+  .LikeListTmpWrap .likeTotal svg {
+    cursor: default !important;
+    color: #909090 !important;
+    width: 16px !important;
+    height: 16px !important; }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+
 .flexAlignCenter {
   display: flex;
   align-items: center; }
 
 .IndexWrap section {
-  padding: 30px 50px;
+  padding: 10px 0 0 50px;
   min-height: 700px;
   transition: all 1s ease-in-out; }
 
 .IndexWrap .progress {
   margin: 200px 430px;
   width: 200px !important; }
+
+.IndexWrap .indexArticles {
+  display: flex; }
+  .IndexWrap .indexArticles > :nth-child(2) {
+    width: 270px; }
+
+.IndexWrap .articlesList {
+  box-sizing: border-box;
+  width: 650px;
+  margin-right: 30px; }
+
+.IndexWrap .search {
+  position: relative;
+  margin-top: -20px; }
+  .IndexWrap .search > :nth-child(2) {
+    color: #6fbed5 !important;
+    position: absolute;
+    right: 10px;
+    bottom: 10px; }
+
+.IndexWrap .other {
+  margin-top: 30px; }
+  .IndexWrap .other img {
+    display: block;
+    height: 160px;
+    width: 270px; }
+
+.IndexWrap .indexOtherList, .IndexWrap .readList, .IndexWrap .contact {
+  margin-top: 10px;
+  color: #909090; }
+  .IndexWrap .indexOtherList > :nth-child(2), .IndexWrap .readList > :nth-child(2), .IndexWrap .contact > :nth-child(2) {
+    font-size: 12px !important; }
+
+.IndexWrap .contact > :nth-child(2) {
+  margin: 10px 0 0 15px; }
 .container {
   position: relative;
   top: 70px;
