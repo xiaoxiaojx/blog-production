@@ -40,6 +40,8 @@
     margin-right: 80px;
     box-sizing: inherit;
     height: 100%;
+    margin-right: 30px;
+    width: 90px;
     padding: 20px 0; }
   .HeaderWrap .loginForm .btnWrap {
     margin-top: 50px; }
@@ -387,6 +389,8 @@
   .ViewArticleWrap .date {
     font-size: 12px;
     color: #909090; }
+    .ViewArticleWrap .date label {
+      margin: 10px 2px; }
   .ViewArticleWrap .title {
     text-align: center;
     margin: 30px 0;
