@@ -59,7 +59,7 @@ exports.publishArticle = function (req, res) {
     });
 };
 exports.getArticles = function (req, res) { return __awaiter(_this, void 0, void 0, function () {
-    var userName, filter, articleDocs, getLength, userInfos, data;
+    var userName, filter, articleDocs, userInfos, data;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -74,11 +74,6 @@ exports.getArticles = function (req, res) { return __awaiter(_this, void 0, void
                     })];
             case 1:
                 articleDocs = _a.sent();
-                getLength = function (arr) {
-                    var targetArr = [];
-                    targetArr = arr.map(function (item, index) { return index; });
-                    return targetArr.length;
-                };
                 return [4 /*yield*/, Promise.all(articleDocs.map(function (item) { return quick_1.quickGetUserInfo(item["userName"]); }))];
             case 2:
                 userInfos = _a.sent();
@@ -88,11 +83,12 @@ exports.getArticles = function (req, res) { return __awaiter(_this, void 0, void
                     title: articleDocs[index]["title"],
                     content: articleDocs[index]["content"],
                     date: articleDocs[index]["date"],
-                    like: getLength(articleDocs[index]["like"]),
-                    comment: getLength(articleDocs[index]["comment"]),
+                    like: articleDocs[index]["like"].length,
+                    comment: articleDocs[index]["comment"].length,
                     editor: articleDocs[index]["editor"],
                     nickname: item["nickname"],
-                    avatar: item["avatar"]
+                    avatar: item["avatar"],
+                    views: articleDocs[index]["views"]
                 }); });
                 res.send({
                     message: "查询成功",
@@ -149,7 +145,8 @@ exports.getArticle = function (req, res) { return __awaiter(_this, void 0, void 
                     comment: comment,
                     editor: articleDoc["editor"],
                     nickname: userInfo["nickname"],
-                    avatar: userInfo["avatar"]
+                    avatar: userInfo["avatar"],
+                    views: articleDoc["views"]
                 };
                 res.send({
                     message: "查询成功",

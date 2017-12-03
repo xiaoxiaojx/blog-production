@@ -10,7 +10,8 @@ var articleSchema = new mongoose.Schema({
     like: Array,
     comment: Array,
     date: String,
-    editor: String
+    editor: String,
+    views: Number
 });
 var Article = mongoose.model("Article", articleSchema);
 exports["default"] = Article;
