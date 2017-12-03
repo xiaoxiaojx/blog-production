@@ -176,3 +176,20 @@ exports.setArticle = function (req, res) {
         }
     });
 };
+exports.delArticle = function (req, res) {
+    var id = req.body.id;
+    Article_1["default"].remove({ _id: id }, function (err) {
+        if (!err) {
+            res.send({
+                message: "更新成功",
+                error: false
+            });
+        }
+        else {
+            res.send({
+                message: "更新失败",
+                error: true
+            });
+        }
+    });
+};
