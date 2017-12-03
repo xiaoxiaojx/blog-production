@@ -108,10 +108,13 @@
   padding: 20px 0 10px;
   border-bottom: 1px solid #ebebeb; }
   .ArticleTmpWrap .avatar {
+    position: relative;
     align-items: center;
     font-size: 14px;
     color: #8b8b8b;
     width: 100%; }
+    .ArticleTmpWrap .avatar > :nth-child(1) {
+      margin: -10px 10px 0 0 !important; }
     .ArticleTmpWrap .avatar img {
       margin-right: 6px;
       width: 30px;
