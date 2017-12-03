@@ -114,7 +114,8 @@
     color: #8b8b8b;
     width: 100%; }
     .ArticleTmpWrap .avatar > :nth-child(1) {
-      margin: -10px 10px 0 0 !important; }
+      margin-right: 10px !important;
+      padding: 0px !important; }
     .ArticleTmpWrap .avatar img {
       margin-right: 6px;
       width: 30px;
@@ -145,6 +146,7 @@
     .ArticleTmpWrap .comment span {
       margin-right: 10px; }
     .ArticleTmpWrap .comment svg {
+      cursor: default;
       color: #b4b4b4 !important;
       width: 14px !important;
       height: 14px !important; }
@@ -396,7 +398,7 @@
       margin: 10px 2px; }
   .ViewArticleWrap .title {
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 0 10px;
     font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif; }
   .ViewArticleWrap .allArticles {
     background-color: rgba(244, 245, 245, 0.1); }
@@ -438,6 +440,9 @@
       color: #6fbed5 !important; }
     .ViewArticleWrap .likeWrap .normal {
       color: #ccc !important; }
+  .ViewArticleWrap .action {
+    display: flex;
+    justify-content: flex-end; }
   .ViewArticleWrap .commentBtnWrap {
     text-align: right; }
 .container {
