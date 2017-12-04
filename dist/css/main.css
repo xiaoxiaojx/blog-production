@@ -41,7 +41,7 @@
     box-sizing: inherit;
     height: 100%;
     margin-right: 30px;
-    width: 90px;
+    width: 95px;
     padding: 20px 0; }
   .HeaderWrap .loginForm .btnWrap {
     margin-top: 50px; }
@@ -529,5 +529,5 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #6fbed5; }
 
-svg {
+svg, a {
   cursor: pointer; }
