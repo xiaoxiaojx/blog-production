@@ -375,7 +375,7 @@
     bottom: 10px; }
 
 .IndexWrap .other {
-  margin-top: 30px; }
+  margin-top: 20px; }
   .IndexWrap .other img {
     display: block;
     height: 160px;
@@ -388,6 +388,7 @@
     font-size: 12px !important; }
 
 .IndexWrap .contact > :nth-child(2) {
+  display: flex;
   margin: 10px 0 0 15px; }
 .container {
   position: relative;
