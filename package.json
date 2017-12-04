@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "tsc ./src/app.ts --outDir ./bin --lib ES2015 && node ./bin/www",
-    "build": "tsc ./src/app.ts --outDir ./bin --lib ES2015 ",
+    "start": "tsc ./src/app.ts --outDir ./bin --lib ES2015 && NODE_ENV=development node ./bin/www",
+    "build": "tsc ./src/app.ts --outDir ./bin --lib ES2015 && NODE_ENV=production",
     "release": "sh ./tool/release.sh"
   },
   "dependencies": {

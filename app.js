@@ -15,12 +15,17 @@ var Articles = require("./controllers/article");
 var Upload = require("./controllers/upload");
 var app = express();
 var upload = multer({ dest: "uploads/" });
+var NODE_ENV = process.env.NODE_ENV;
+var isDevelopment = NODE_ENV === "development";
 mongoose.connect("mongodb://localhost:27017");
 mongoose.connection.on("error", function () {
     console.log("MongoDB connection error. Please make sure MongoDB is running...");
     process.exit();
 });
-app.use(cors());
+if (isDevelopment) {
+    app.use(cors({ "origin": "http://localhost:3333" }));
+    console.log("只有在开发模式中才允许跨域访问, 且主机必须为 http://localhost:3333 !");
+}
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

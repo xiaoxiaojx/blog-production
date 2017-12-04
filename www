@@ -87,5 +87,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
-  console.log('Server run localhost:3000 ...')
+  console.log(`${process.env.NODE_ENV} Server run localhost:${port} ...`)
 }
