@@ -334,7 +334,7 @@
   .LikeListTmpWrap a {
     cursor: pointer; }
   .LikeListTmpWrap .likeTotal > :nth-child(1) {
-    max-width: 100px;
+    width: 140px;
     overflow: hidden;
     word-break: break-all;
     max-height: 16px;
@@ -383,12 +383,10 @@
     right: 10px;
     bottom: 10px; }
 
-.IndexWrap .other {
-  margin-top: 20px; }
-  .IndexWrap .other img {
-    display: block;
-    height: 160px;
-    width: 270px; }
+.IndexWrap .other img {
+  display: block;
+  height: 160px;
+  width: 270px; }
 
 .IndexWrap .indexOtherList, .IndexWrap .readList, .IndexWrap .contact {
   margin-top: 10px;
@@ -541,8 +539,3 @@ body {
 
 svg, a {
   cursor: pointer; }
-
-canvas {
-  top: 0px;
-  position: absolute !important;
-  z-index: -1 !important; }
