@@ -315,6 +315,8 @@
       min-width: 500px; }
     .ArticlesWrap .markDownWrap > :nth-child(2) {
       word-break: break-all; }
+    .ArticlesWrap .markDownWrap img {
+      max-width: 400px !important; }
 .container {
   position: relative;
   top: 70px;
@@ -383,7 +385,7 @@
   .IndexWrap .articlesListWrap {
     position: relative;
     box-sizing: border-box;
-    width: 650px;
+    width: 700px;
     margin-right: 30px; }
   .IndexWrap .articlesList {
     padding: 10px 0 0 50px; }
