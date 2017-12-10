@@ -40,8 +40,8 @@ var Article_1 = require("../models/Article");
 var quick_1 = require("./quick");
 var $findNot = { "__v": 0 };
 exports.publishArticle = function (req, res) {
-    var _a = req.body, userName = _a.userName, nickname = _a.nickname, avatar = _a.avatar, title = _a.title, content = _a.content, date = _a.date, editor = _a.editor;
-    Article_1["default"].insertMany({ userName: userName, nickname: nickname, avatar: avatar, title: title, content: content, date: date, editor: editor }, function (err, doc) {
+    var _a = req.body, userName = _a.userName, nickname = _a.nickname, avatar = _a.avatar, title = _a.title, content = _a.content, date = _a.date, editor = _a.editor, chipType = _a.chipType;
+    Article_1["default"].insertMany({ userName: userName, nickname: nickname, avatar: avatar, title: title, content: content, date: date, editor: editor, chipType: chipType }, function (err, doc) {
         if (err)
             throw err;
         if (doc) {
@@ -86,6 +86,7 @@ exports.getArticles = function (req, res) { return __awaiter(_this, void 0, void
                     like: articleDocs[index]["like"].length,
                     comment: articleDocs[index]["comment"].length,
                     editor: articleDocs[index]["editor"],
+                    chipType: articleDocs[index]["chipType"],
                     nickname: item["nickname"],
                     avatar: item["avatar"],
                     views: articleDocs[index]["views"]
@@ -144,6 +145,7 @@ exports.getArticle = function (req, res) { return __awaiter(_this, void 0, void 
                     like: like,
                     comment: comment,
                     editor: articleDoc["editor"],
+                    chipType: articleDoc["chipType"],
                     nickname: userInfo["nickname"],
                     avatar: userInfo["avatar"],
                     views: articleDoc["views"]

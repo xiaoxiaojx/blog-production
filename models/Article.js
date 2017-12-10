@@ -11,7 +11,8 @@ var articleSchema = new mongoose.Schema({
     comment: Array,
     date: String,
     editor: String,
-    views: Number
+    views: Number,
+    chipType: String
 });
 var Article = mongoose.model("Article", articleSchema);
 exports["default"] = Article;
