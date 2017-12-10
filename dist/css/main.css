@@ -93,6 +93,26 @@
 .flexAlignCenter {
   display: flex;
   align-items: center; }
+
+.BackTopWrap {
+  position: fixed;
+  right: 40px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 50px; }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+
+.flexAlignCenter {
+  display: flex;
+  align-items: center; }
 .container {
   position: relative;
   top: 70px;
@@ -106,7 +126,7 @@
 
 .ArticleTmpWrap {
   padding: 20px 0 10px;
-  border-bottom: 1px solid #ebebeb; }
+  border-top: 1px solid #ebebeb; }
   .ArticleTmpWrap .avatar {
     position: relative;
     align-items: center;
@@ -274,7 +294,7 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter, .ArticlesWrap .editorWrap {
+.flexAlignCenter, .ArticlesWrap .editorWrap, .ArticlesWrap .chipSelect {
   display: flex;
   align-items: center; }
 
@@ -287,7 +307,7 @@
       width: 100px !important;
       font-size: 12px; }
   .ArticlesWrap .title {
-    margin: -10px 0 30px; }
+    margin: -10px 0 10px; }
     .ArticlesWrap .title label {
       font-size: 20px; }
     .ArticlesWrap .title input {
@@ -317,6 +337,11 @@
       word-break: break-all; }
     .ArticlesWrap .markDownWrap img {
       max-width: 400px !important; }
+  .ArticlesWrap .chipSelect {
+    margin-bottom: 30px; }
+    .ArticlesWrap .chipSelect label {
+      margin-right: 20px;
+      color: rgba(0, 0, 0, 0.3); }
 .container {
   position: relative;
   top: 70px;
@@ -360,6 +385,26 @@
   margin: auto;
   box-sizing: border-box; }
 
+.flexAlignCenter, .ChipsWrap .chipsList {
+  display: flex;
+  align-items: center; }
+
+.ChipsWrap {
+  padding: 30px 0 0 50px; }
+  .ChipsWrap .chipsList .chip {
+    margin-right: 10px !important; }
+  .ChipsWrap .toggle {
+    max-width: 110px !important; }
+  .ChipsWrap .toggleWrap {
+    display: flex;
+    justify-content: flex-end; }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+
 .flexAlignCenter {
   display: flex;
   align-items: center; }
@@ -390,8 +435,7 @@
   .IndexWrap .articlesList {
     padding: 10px 0 0 50px; }
   .IndexWrap .search {
-    position: relative;
-    margin-top: -20px; }
+    position: relative; }
     .IndexWrap .search > :nth-child(2) {
       color: #6fbed5 !important;
       position: absolute;
