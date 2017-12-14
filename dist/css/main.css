@@ -125,7 +125,7 @@
   align-items: center; }
 
 .ArticleTmpWrap {
-  padding: 20px 0 10px;
+  padding: 10px 0 10px;
   border-top: 1px solid #ebebeb; }
   .ArticleTmpWrap .avatar {
     position: relative;
@@ -148,7 +148,6 @@
   .ArticleTmpWrap .title {
     display: block;
     color: #969696;
-    margin: 0 0 10px;
     font-size: 24px;
     font-weight: 600; }
   .ArticleTmpWrap .content {
@@ -157,7 +156,8 @@
     overflow: hidden;
     word-break: break-all;
     color: #8b8b8b;
-    font-size: 16px; }
+    font-size: 16px;
+    margin: 0 0 10px; }
   .ArticleTmpWrap .comment {
     display: flex;
     align-items: center;
@@ -170,13 +170,18 @@
       color: #b4b4b4 !important;
       width: 14px !important;
       height: 14px !important; }
-  .ArticleTmpWrap .imageContent {
+  .ArticleTmpWrap .imageContentWrap {
     display: flex;
     justify-content: space-between; }
-    .ArticleTmpWrap .imageContent img {
-      margin-left: 10px;
+    .ArticleTmpWrap .imageContentWrap .imageContent {
+      margin: 10px 0 0 10px;
       width: 150px !important;
       max-height: 120px !important; }
+  .ArticleTmpWrap .tags {
+    color: #6fbed5;
+    border: 1px solid #6fbed5;
+    border-radius: 2px;
+    padding: 0 6px; }
 .container {
   position: relative;
   top: 70px;
