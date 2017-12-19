@@ -32,6 +32,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "dist")));
 app.use(express.static(path.join(__dirname, "uploads")));
+app.use(express.static(path.join(__dirname, "asset")));
 app.get("/", homeController.index);
 app.post("/api/test", test.test);
 app.post("/api/register", Services.register);
