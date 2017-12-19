@@ -1,3 +1,8 @@
-# CampusMessageWall
+# www.xiaojiaxin.com
 
-  This is a project I've always wanted to write and the site is still under review
+* [Quick View](http://www.xiaojiaxin.com/)
+
+* [Development code](https://github.com/xiaoxiaojx/xiaojiaxinCS)
+
+* About
+> A faster writing experience
