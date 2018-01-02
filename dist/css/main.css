@@ -76,6 +76,8 @@
     display: block !important; }
   .LoginWrap .btnWrap {
     margin-top: 30px; }
+  .LoginWrap .marginTop {
+    margin-top: 10px; }
 .RegisterWrap {
   width: 360px;
   margin: 30px auto; }
@@ -83,6 +85,8 @@
     display: block !important; }
   .RegisterWrap .btnWrap {
     margin-top: 30px; }
+  .RegisterWrap .marginTop {
+    margin-top: 10px; }
 .container {
   position: relative;
   top: 70px;
@@ -113,6 +117,20 @@
 .flexAlignCenter {
   display: flex;
   align-items: center; }
+
+.loginLogo {
+  text-align: center;
+  animation: displayLoginLogo 1s;
+  display: block;
+  margin: auto; }
+  .loginLogo h3 {
+    margin: -10px 0 -20px; }
+
+@keyframes displayLoginLogo {
+  0% {
+    transform: translateY(-200px); }
+  100% {
+    transform: translateY(0px); } }
 .container {
   position: relative;
   top: 70px;
@@ -145,6 +163,8 @@
       margin: 0px 6px; }
   .ArticleTmpWrap a {
     cursor: pointer !important; }
+  .ArticleTmpWrap .date {
+    font-size: 12px; }
   .ArticleTmpWrap .title {
     display: block;
     color: #969696;
