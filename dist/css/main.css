@@ -114,9 +114,34 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter {
+.flexAlignCenter, .FooterWrap .baseline, .FooterWrap .bigBottomLogo {
   display: flex;
   align-items: center; }
+
+.FooterWrap {
+  width: 100%;
+  margin: 100px auto 30px;
+  color: #6fbed5; }
+  .FooterWrap .baseline {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 2px solid #6fbed5;
+    animation: displayBaseline 20s infinite; }
+    .FooterWrap .baseline:hover .bigBottomLogo {
+      visibility: visible; }
+  .FooterWrap .bottomLogo {
+    cursor: pointer;
+    margin-right: 10px; }
+  .FooterWrap .bigBottomLogo {
+    visibility: hidden;
+    position: absolute;
+    top: -160px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 6px; }
 
 .loginLogo {
   text-align: center;
@@ -131,6 +156,17 @@
     transform: translateY(-200px); }
   100% {
     transform: translateY(0px); } }
+
+@keyframes displayBaseline {
+  0% {
+    margin: 100px auto 30px;
+    width: 500px; }
+  40% {
+    margin: 100px auto 30px;
+    width: 800px; }
+  100% {
+    margin: 100px auto 30px;
+    width: 100%; } }
 .container {
   position: relative;
   top: 70px;
@@ -144,7 +180,8 @@
 
 .ArticleTmpWrap {
   padding: 10px 0 10px;
-  border-top: 1px solid #ebebeb; }
+  border-top: 1px solid #ebebeb;
+  animation: displayArticleTmpWrap 0.6s; }
   .ArticleTmpWrap .avatar {
     position: relative;
     align-items: center;
@@ -202,6 +239,12 @@
     border: 1px solid #6fbed5;
     border-radius: 2px;
     padding: 0 6px; }
+
+@keyframes displayArticleTmpWrap {
+  0% {
+    transform: translateY(-50px); }
+  100% {
+    transform: translateY(0px); } }
 .container {
   position: relative;
   top: 70px;
@@ -413,19 +456,37 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter, .ChipsWrap .chipsList {
+.flexAlignCenter, .ChipsWrap .chipsList, .ChipsWrap .chipsList .chip {
   display: flex;
   align-items: center; }
 
 .ChipsWrap {
   padding: 30px 0 0 50px; }
   .ChipsWrap .chipsList .chip {
-    margin-right: 10px !important; }
+    margin-right: 20px;
+    color: #6fbed5; }
+    .ChipsWrap .chipsList .chip:hover {
+      color: darkgray;
+      text-decoration: #6fbed5; }
+  .ChipsWrap .chipsList .chipLogo {
+    margin-right: 4px; }
+  .ChipsWrap .chipsList .chipLabel:hover {
+    animation: displayChipLabel 1s; }
   .ChipsWrap .toggle {
     max-width: 110px !important; }
   .ChipsWrap .toggleWrap {
     display: flex;
     justify-content: flex-end; }
+
+@keyframes displayChipLabel {
+  0% {
+    transform: translateX(0px); }
+  20% {
+    transform: translateX(7px); }
+  30% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(0px); } }
 .container {
   position: relative;
   top: 70px;
