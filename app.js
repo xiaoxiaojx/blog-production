@@ -23,16 +23,16 @@ mongoose.connection.on("error", function () {
     process.exit();
 });
 if (isDevelopment) {
-    app.use(cors({ "origin": "http://localhost:3333" }));
     console.log("Cross-domain access is allowed only in development mode, and hosts must be http://localhost:3333 !");
 }
+app.use(cors({ "origin": isDevelopment ? "http://localhost:3333" : "http://xiaojiaxin.com" }));
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "dist")));
-app.use(express.static(path.join(__dirname, "uploads")));
-app.use(express.static(path.join(__dirname, "asset")));
+app.use(express.static(path.join(__dirname, "dist"), { maxAge: 600000 }));
+app.use(express.static(path.join(__dirname, "uploads"), { maxAge: 600000 }));
+app.use(express.static(path.join(__dirname, "asset"), { maxAge: 600000 }));
 app.get("/", homeController.index);
 app.post("/api/test", test.test);
 app.post("/api/register", Services.register);
