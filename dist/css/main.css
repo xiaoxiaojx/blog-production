@@ -181,7 +181,8 @@
 .ArticleTmpWrap {
   padding: 10px 0 10px;
   border-top: 1px solid #ebebeb;
-  animation: displayArticleTmpWrap 0.6s; }
+  animation: displayArticleTmpWrap 0.6s;
+  opacity: 1; }
   .ArticleTmpWrap .avatar {
     position: relative;
     align-items: center;
@@ -242,9 +243,11 @@
 
 @keyframes displayArticleTmpWrap {
   0% {
-    transform: translateY(-50px); }
+    transform: translateY(-50px);
+    opacity: 0; }
   100% {
-    transform: translateY(0px); } }
+    transform: translateY(0px);
+    opacity: 1; } }
 .container {
   position: relative;
   top: 70px;
