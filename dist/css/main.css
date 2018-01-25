@@ -10,12 +10,13 @@
   align-items: center; }
 
 .HeaderWrap {
-  position: fixed;
-  z-index: 10;
+  position: sticky;
+  top: -15px;
+  z-index: 200;
   background-color: #fff;
   overflow: hidden;
   box-sizing: border-box;
-  height: 70px;
+  height: 80px;
   width: 100%;
   border-bottom: 1px solid #ebebeb; }
   .HeaderWrap .logo {
@@ -65,7 +66,6 @@
     text-decoration: none; }
 .MainWrap {
   position: relative;
-  top: 70px;
   width: 1000px;
   margin: auto;
   box-sizing: border-box; }
@@ -114,33 +114,35 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter, .FooterWrap .baseline, .FooterWrap .bigBottomLogo {
+.flexAlignCenter, .FooterWrap .baseline, .FooterWrap .bottomLogo, .FooterWrap .bigBottomLogo {
   display: flex;
   align-items: center; }
 
 .FooterWrap {
   width: 100%;
-  margin: 100px auto 30px;
+  margin: 30px auto;
   color: #6fbed5; }
   .FooterWrap .baseline {
     position: relative;
     justify-content: center;
     text-align: center;
     padding-top: 15px;
-    border-top: 2px solid #6fbed5;
-    animation: displayBaseline 20s infinite; }
+    border-top: 2px solid #6fbed5; }
     .FooterWrap .baseline:hover .bigBottomLogo {
       visibility: visible; }
   .FooterWrap .bottomLogo {
     cursor: pointer;
     margin-right: 10px; }
   .FooterWrap .bigBottomLogo {
+    justify-content: center;
     visibility: hidden;
+    width: 500px;
+    height: 168px;
+    overflow: hidden;
     position: absolute;
     top: -160px;
     font-size: 24px;
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 20px 40px;
     border-radius: 6px; }
 
 .loginLogo {
@@ -156,17 +158,6 @@
     transform: translateY(-200px); }
   100% {
     transform: translateY(0px); } }
-
-@keyframes displayBaseline {
-  0% {
-    margin: 100px auto 30px;
-    width: 500px; }
-  40% {
-    margin: 100px auto 30px;
-    width: 800px; }
-  100% {
-    margin: 100px auto 30px;
-    width: 100%; } }
 .container {
   position: relative;
   top: 70px;
@@ -380,6 +371,7 @@
   .ArticlesWrap .title {
     margin: -10px 0 10px; }
     .ArticlesWrap .title label {
+      display: inline-block;
       font-size: 20px; }
     .ArticlesWrap .title input {
       font-size: 30px !important;
@@ -464,6 +456,7 @@
   align-items: center; }
 
 .ChipsWrap {
+  width: 650px;
   padding: 30px 0 0 50px; }
   .ChipsWrap .chipsList .chip {
     margin-right: 20px;
@@ -473,23 +466,40 @@
       text-decoration: #6fbed5; }
   .ChipsWrap .chipsList .chipLogo {
     margin-right: 4px; }
-  .ChipsWrap .chipsList .chipLabel:hover {
-    animation: displayChipLabel 1s; }
+  .ChipsWrap .chipsList .chipLabel {
+    transition: all .2s ease-in; }
+    .ChipsWrap .chipsList .chipLabel:hover {
+      transform: translate(5px);
+      text-decoration: underline; }
   .ChipsWrap .toggle {
     max-width: 110px !important; }
   .ChipsWrap .toggleWrap {
     display: flex;
     justify-content: flex-end; }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
 
-@keyframes displayChipLabel {
-  0% {
-    transform: translateX(0px); }
-  20% {
-    transform: translateX(7px); }
-  30% {
-    transform: translateX(10px); }
-  100% {
-    transform: translateX(0px); } }
+.flexAlignCenter {
+  display: flex;
+  align-items: center; }
+
+.SubHeaderWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  background-color: #fff; }
+  .SubHeaderWrap .search {
+    position: relative;
+    width: 270px; }
+    .SubHeaderWrap .search > :nth-child(2) {
+      color: #6fbed5 !important;
+      position: absolute;
+      top: 42%;
+      right: 10px; }
 .container {
   position: relative;
   top: 70px;
@@ -502,6 +512,7 @@
   align-items: center; }
 
 .IndexWrap {
+  overflow: visible;
   min-height: 800px; }
   .IndexWrap section {
     min-height: 700px;
@@ -526,19 +537,10 @@
     margin-right: 30px; }
   .IndexWrap .articlesList {
     padding: 10px 0 0 50px; }
-  .IndexWrap .search {
-    position: relative; }
-    .IndexWrap .search > :nth-child(2) {
-      color: #6fbed5 !important;
-      position: absolute;
-      right: 10px;
-      bottom: 10px; }
-  .IndexWrap .other {
-    margin-top: 10px; }
-    .IndexWrap .other img {
-      display: block;
-      height: 160px;
-      width: 270px; }
+  .IndexWrap .other img {
+    display: block;
+    height: 160px;
+    width: 270px; }
   .IndexWrap .indexOtherList, .IndexWrap .readList, .IndexWrap .contact {
     margin-top: 10px;
     color: #909090; }
