@@ -8,6 +8,7 @@ var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var cors = require("cors");
 var multer = require("multer");
+var compression = require("compression");
 var homeController = require("./controllers/home");
 var test = require("./controllers/test");
 var Services = require("./controllers");
@@ -26,6 +27,7 @@ if (isDevelopment) {
     console.log("Cross-domain access is allowed only in development mode, and hosts must be http://localhost:3333 !");
 }
 app.use(cors({ "origin": isDevelopment ? "http://localhost:3333" : "http://xiaojiaxin.com" }));
+app.use(compression());
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
