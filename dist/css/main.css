@@ -170,7 +170,7 @@
   align-items: center; }
 
 .ArticleTmpWrap {
-  padding: 10px 0 10px;
+  padding: 20px 0 10px;
   border-top: 1px solid #ebebeb;
   animation: displayArticleTmpWrap 0.6s;
   opacity: 1; }
@@ -206,6 +206,7 @@
     word-break: break-all;
     color: #8b8b8b;
     font-size: 16px;
+    line-height: 22px;
     margin: 0 0 10px; }
   .ArticleTmpWrap .comment {
     display: flex;
@@ -374,12 +375,12 @@
       display: inline-block;
       font-size: 20px; }
     .ArticlesWrap .title input {
-      font-size: 30px !important;
-      font-weight: 400;
+      font-size: 28px !important;
+      font-weight: 300;
       padding-bottom: 6px !important; }
     .ArticlesWrap .title > div {
       font-size: 28px !important;
-      width: 800px !important; }
+      width: 600px !important; }
   .ArticlesWrap .ql-editor {
     min-height: 600px; }
   .ArticlesWrap footer {
@@ -402,9 +403,10 @@
       max-width: 400px !important; }
   .ArticlesWrap .chipSelect {
     margin-bottom: 30px; }
-    .ArticlesWrap .chipSelect label {
-      margin-right: 20px;
-      color: rgba(0, 0, 0, 0.3); }
+  .ArticlesWrap .articlesLabel {
+    font-size: 20px;
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.3); }
   .ArticlesWrap .breakAll {
     overflow: scroll;
     word-break: break-all; }
@@ -695,3 +697,16 @@ body {
 
 svg, a {
   cursor: pointer; }
+
+.ql-toolbar.ql-snow {
+  margin-top: 4px;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+
+.ql-container.ql-snow {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #ccc; }
