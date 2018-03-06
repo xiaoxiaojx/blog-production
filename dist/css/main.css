@@ -172,7 +172,7 @@
 .ArticleTmpWrap {
   padding: 20px 0 10px;
   border-top: 1px solid #ebebeb;
-  animation: displayArticleTmpWrap 0.6s;
+  animation: displayArticleTmpWrap 0.5s;
   opacity: 1; }
   .ArticleTmpWrap .avatar {
     position: relative;
