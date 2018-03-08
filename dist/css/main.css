@@ -568,19 +568,48 @@
   display: flex;
   align-items: center; }
 
-.ViewArticleWrap {
+.LikeIconWrap .likeTotal {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6); }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+
+.flexAlignCenter {
   display: flex;
+  align-items: center; }
+
+.ViewArticleWrap {
+  position: relative;
   min-height: 700px; }
+  .ViewArticleWrap .floatLike {
+    position: fixed;
+    top: 170px;
+    display: flex;
+    animation: sliderDownLike .4s ease-in-out;
+    flex-direction: column;
+    animation-fill-mode: forwards; }
   .ViewArticleWrap main {
     background-color: #fff;
-    padding: 20px;
-    margin-right: 20px;
+    padding: 35px 20px 20px;
+    margin: 0 auto;
     width: 700px; }
   .ViewArticleWrap img {
     cursor: pointer;
     max-width: 500px !important; }
   .ViewArticleWrap nav {
     width: 280px; }
+  .ViewArticleWrap .likeSvg {
+    width: 32px !important;
+    height: 32px !important;
+    transition: all .2s ease-in-out;
+    margin-top: 20px; }
+    .ViewArticleWrap .likeSvg:hover {
+      color: #55bed5 !important;
+      transform: scale(1.2); }
   .ViewArticleWrap .avatar {
     display: flex; }
     .ViewArticleWrap .avatar img {
@@ -600,22 +629,6 @@
   .ViewArticleWrap .title {
     text-align: center;
     margin: 30px 0 10px; }
-  .ViewArticleWrap .allArticles {
-    background-color: #fff; }
-    .ViewArticleWrap .allArticles > :nth-child(1) {
-      padding: 10px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.0785); }
-  .ViewArticleWrap .articlesList {
-    padding: 5px 10px;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.0785); }
-    .ViewArticleWrap .articlesList a {
-      display: block;
-      cursor: pointer;
-      height: 18px;
-      font-size: 16px !important;
-      overflow: hidden;
-      word-break: break-all;
-      color: #909090; }
   .ViewArticleWrap .content {
     min-height: 400px; }
   .ViewArticleWrap .likeWrap {
@@ -633,13 +646,10 @@
       margin-top: 15px; }
       .ViewArticleWrap .likeWrap > :nth-child(2) img {
         margin-right: 10px; }
-    .ViewArticleWrap .likeWrap svg {
-      width: 30px !important;
-      height: 30px !important; }
-    .ViewArticleWrap .likeWrap .like {
-      color: rgba(0, 0, 0, 0.6) !important; }
-    .ViewArticleWrap .likeWrap .normal {
-      color: #ccc !important; }
+  .ViewArticleWrap .like {
+    color: #55bed5 !important; }
+  .ViewArticleWrap .normal {
+    color: #ccc !important; }
   .ViewArticleWrap .action {
     display: flex;
     justify-content: flex-end; }
@@ -649,6 +659,12 @@
     display: block;
     width: 100%;
     overflow: scroll; }
+
+@keyframes sliderDownLike {
+  0% {
+    top: 170px; }
+  100% {
+    top: 200px; } }
 .container {
   position: relative;
   top: 70px;
