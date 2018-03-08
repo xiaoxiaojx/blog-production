@@ -200,7 +200,7 @@
   align-items: center; }
 
 .ArticleTmpWrap {
-  padding: 20px 0 10px;
+  padding: 30px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.0785);
   animation: displayArticleTmpWrap 0.5s;
   opacity: 1; }
@@ -227,7 +227,7 @@
   .ArticleTmpWrap .title {
     display: block;
     color: #969696;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600; }
   .ArticleTmpWrap .content {
     display: block;
