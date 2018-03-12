@@ -277,7 +277,7 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter {
+.flexAlignCenter, .HomeWrap header .like {
   display: flex;
   align-items: center; }
 
@@ -303,10 +303,20 @@
     .HomeWrap header .setting:hover {
       opacity: 1; }
     .HomeWrap header .nickname {
-      margin-top: 25px;
-      font-size: 2.5rem;
+      margin-top: 15px;
+      font-size: 26px;
       font-weight: 400;
       color: #333; }
+    .HomeWrap header .like {
+      justify-content: center;
+      font-size: 16px;
+      color: #8b8b8b; }
+      .HomeWrap header .like img, .HomeWrap header .like svg {
+        width: 26px;
+        height: 26px;
+        color: #55bed5 !important;
+        margin: 0 4px;
+        border-radius: 0px; }
     .HomeWrap header .selfIntroduction {
       margin: 5px 0;
       color: #8b8b8b;
