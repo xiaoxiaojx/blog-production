@@ -12,7 +12,8 @@ var articleSchema = new mongoose.Schema({
     date: String,
     editor: String,
     views: Number,
-    chipType: String
+    chipType: String,
+    folder: String
 });
 var Article = mongoose.model("Article", articleSchema);
 exports["default"] = Article;
