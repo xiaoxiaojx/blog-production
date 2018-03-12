@@ -277,7 +277,33 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter, .HomeWrap header .like {
+.flexAlignCenter {
+  display: flex;
+  align-items: center; }
+
+.folderItem {
+  margin: 0 4px;
+  padding: 4px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  height: 22px;
+  line-height: 22px;
+  cursor: pointer; }
+  .folderItem:hover {
+    text-decoration: underline;
+    border: 1px solid #55bed5;
+    color: #55bed5; }
+
+.highlightColor {
+  border: 1px solid #55bed5;
+  color: #55bed5; }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+
+.flexAlignCenter, .HomeWrap header .like, .HomeWrap main .articleFolder {
   display: flex;
   align-items: center; }
 
@@ -311,12 +337,15 @@
       justify-content: center;
       font-size: 16px;
       color: #8b8b8b; }
-      .HomeWrap header .like img, .HomeWrap header .like svg {
-        width: 26px;
-        height: 26px;
-        color: #55bed5 !important;
+      .HomeWrap header .like img {
         margin: 0 4px;
+        width: 22px;
+        height: 22px;
         border-radius: 0px; }
+      .HomeWrap header .like svg {
+        width: 26px !important;
+        height: 26px !important;
+        color: #55bed5 !important; }
     .HomeWrap header .selfIntroduction {
       margin: 5px 0;
       color: #8b8b8b;
@@ -333,7 +362,7 @@
     margin: 25px auto;
     padding: 0 25px;
     background-color: #fff; }
-    .HomeWrap main .header {
+    .HomeWrap main .articleHeader {
       width: 100%;
       height: 60px;
       line-height: 60px;
@@ -395,7 +424,7 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter, .ArticlesWrap .editorWrap, .ArticlesWrap .chipSelect {
+.flexAlignCenter, .ArticlesWrap .editorWrap, .ArticlesWrap .chipSelect, .ArticlesWrap .articlesLabel, .ArticlesWrap .foldersWrap, .ArticlesWrap .folders {
   display: flex;
   align-items: center; }
 
@@ -448,6 +477,8 @@
   .ArticlesWrap .breakAll {
     overflow: scroll;
     word-break: break-all; }
+  .ArticlesWrap .foldersWrap {
+    margin: 10px 0; }
 .container {
   position: relative;
   top: 70px;
@@ -588,7 +619,7 @@
   margin: auto;
   box-sizing: border-box; }
 
-.flexAlignCenter {
+.flexAlignCenter, .ViewArticleWrap .categoryWrap {
   display: flex;
   align-items: center; }
 
@@ -638,7 +669,8 @@
     text-align: center;
     margin: 30px 0 10px; }
   .ViewArticleWrap .content {
-    min-height: 400px; }
+    min-height: 400px;
+    word-break: break-all; }
   .ViewArticleWrap .likeWrap {
     margin-top: 50px;
     padding-bottom: 30px;
@@ -667,6 +699,11 @@
     display: block;
     width: 100%;
     overflow: scroll; }
+  .ViewArticleWrap .categoryWrap {
+    color: rgba(0, 0, 0, 0.6); }
+    .ViewArticleWrap .categoryWrap a {
+      padding: 4px 10px;
+      border-radius: 4px; }
 
 @keyframes sliderDownLike {
   0% {
@@ -691,6 +728,9 @@ body {
 
 svg, a {
   cursor: pointer; }
+
+a:hover {
+  text-decoration: underline; }
 
 .ql-toolbar.ql-snow {
   margin-top: 4px;
