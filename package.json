@@ -6,7 +6,7 @@
     "start": "tsc ./src/app.ts --outDir ./bin --lib ES2015 && NODE_ENV=development node ./bin/www",
     "build": "tsc ./src/app.ts --outDir ./bin --lib ES2015 && NODE_ENV=production",
     "release": "sh ./tool/release.sh",
-    "www": "NODE_ENV=production node www"
+    "www": "NODE_ENV=production forever -w www"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
