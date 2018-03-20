@@ -164,6 +164,7 @@
     cursor: pointer;
     margin-right: 10px; }
   .FooterWrap .bigBottomLogo {
+    color: #55bed5;
     justify-content: center;
     visibility: hidden;
     width: 500px;
