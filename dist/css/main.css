@@ -431,6 +431,54 @@
 .flexAlignCenter {
   display: flex;
   align-items: center; }
+.MarkdownWrap .markdown-controls {
+  position: relative;
+  z-index: 5;
+  text-align: right;
+  color: #fff;
+  float: right; }
+
+.MarkdownWrap .markdown-controls form {
+  background-color: rgba(39, 40, 34, 0.5);
+  margin-right: 20px; }
+
+.MarkdownWrap .markdown-controls legend {
+  border-bottom: 0;
+  color: #fff;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 10px 0 0 0; }
+
+.MarkdownWrap .CodeMirror {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  font-size: 16px; }
+
+.MarkdownWrap pre {
+  border: 1px solid #ccc; }
+
+.MarkdownWrap blockquote {
+  color: #666;
+  margin: 0;
+  padding-left: 3em;
+  border-left: 0.5em #eee solid; }
+
+.MarkdownWrap tr {
+  border-top: 1px solid #c6cbd1;
+  background: #fff; }
+
+.MarkdownWrap th,
+.MarkdownWrap td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5; }
+
+.MarkdownWrap table tr:nth-child(2n) {
+  background: #f6f8fa; }
 .container {
   position: relative;
   top: 70px;
@@ -724,6 +772,16 @@
     top: 170px; }
   100% {
     top: 200px; } }
+.NotFoundWrap {
+  text-align: center;
+  padding: 50px 0px 100px; }
+  .NotFoundWrap .notFoundNumber {
+    font-size: 120px;
+    margin-right: 30px; }
+  .NotFoundWrap .notFoundDesc {
+    font-size: 20px; }
+  .NotFoundWrap img {
+    margin-top: 30px; }
 .container {
   position: relative;
   top: 70px;
