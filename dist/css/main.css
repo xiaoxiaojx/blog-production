@@ -431,6 +431,17 @@
 .flexAlignCenter {
   display: flex;
   align-items: center; }
+.container {
+  position: relative;
+  top: 70px;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box; }
+
+.flexAlignCenter {
+  display: flex;
+  align-items: center; }
+
 .MarkdownWrap .markdown-controls {
   position: relative;
   z-index: 5;
@@ -460,7 +471,20 @@
   font-size: 16px; }
 
 .MarkdownWrap pre {
-  border: 1px solid #ccc; }
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  word-wrap: normal;
+  margin-top: 0;
+  margin-bottom: 16px; }
+
+.MarkdownWrap a {
+  color: #55bed5; }
+  .MarkdownWrap a:hover {
+    color: aqua; }
 
 .MarkdownWrap blockquote {
   color: #666;
