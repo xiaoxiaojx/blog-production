@@ -18,7 +18,8 @@ var app = express();
 var upload = multer({ dest: "uploads/" });
 var NODE_ENV = process.env.NODE_ENV;
 var isDevelopment = NODE_ENV === "development";
-var whitelist = ["http://xiaojiaxin.com", "https://xiaoxiaojx.github.io"];
+console.log("Server run" + NODE_ENV);
+var whitelist = ["http://xiaojiaxin.com", "https://xiaoxiaojx.github.io", "https://xiaoxiaojx.github.io/blog"];
 mongoose.connect("mongodb://localhost:27017");
 mongoose.connection.on("error", function () {
     console.log("MongoDB connection error. Please make sure MongoDB is running...");
