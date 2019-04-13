@@ -1,6 +1,6 @@
-# www.xiaojiaxin.com
+# http://47.100.96.203/#/
 
-* [Quick View](http://www.xiaojiaxin.com/)
+* [Quick View](http://47.100.96.203/#/)
 
 * [Development code](https://github.com/xiaoxiaojx/xiaojiaxinCS)
 
